@@ -1,0 +1,37 @@
+.about {
+    position: absolute;
+    top: 840px;
+    width: 100%;
+    padding-left: 165px;
+    display: flex;
+
+    &__wrapper {
+        margin-left: 34px;
+        width: 350px;
+
+        &__line{
+            background-color: $primary-color-dark-gray-blue;
+            width: 350px;
+        }
+
+        &__title {
+            padding-top: 50px;
+            @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
+        }
+
+        &__text {
+            margin-top: 70px;
+            margin-bottom: 50px;
+            @include text($main-font-family-text, 16px, 400, $primary-color-dark-gray-blue, 0.8, 30px,  350px, 360px);
+        }
+        &__btn{
+            @include button (none, $primary-color-dark-gray-blue, $main-font-family-text, 134px, 14px, #fff, 17px 32px, 1px solid #000);
+        }
+        &_line{
+            margin-top: 50px;
+            background-color: $primary-color-dark-gray-blue;
+            width: 350px;
+            height: 1px;
+        }
+    }
+}

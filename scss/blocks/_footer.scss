@@ -1,0 +1,45 @@
+.footer {
+    position: relative;
+    width: 100%;
+
+    &__nav {
+        background-color: $primary-color-dark-gray-blue;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        justify-content: space-around;
+        align-items: center;
+        top: 1880px;
+        padding-right: 165px;
+        padding-left: 165px;
+
+
+
+        &__list {
+            display: flex;
+            width: 25%;
+            justify-content: space-between;
+
+
+            &__item {
+                text-transform: uppercase;
+                list-style-type: none;
+
+                &--link {
+                    font-family: $main-font-family-text;
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #fff;
+                    font-weight: 400;
+                    line-height: 14.1px;
+                }
+            }
+        }
+        &__icons{
+            width:9%;
+            justify-content: space-between;
+        }
+    }
+}
