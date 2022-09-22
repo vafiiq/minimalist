@@ -1,0 +1,26 @@
+.touch{
+    width: 100%;
+    position: absolute;
+    top: 239px;
+    left: 165px;
+    &__line{
+        
+        height: 1px;
+        background-color: $primary-color-dark-gray-blue;
+        opacity: 0.15;
+        width: 1110px;
+    }
+    &__wrapper{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        top: 48px;
+        &__title{
+            @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
+        }
+        &__text{
+            @include text($main-font-family-text, 16px, 400, $primary-color-dark-gray-blue, 0.8, 30px, 635px, 210px);
+        }
+
+    }
+}

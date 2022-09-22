@@ -1875,6 +1875,45 @@ main {
     display: none;
   }
 }
+.touch {
+  width: 100%;
+  position: absolute;
+  top: 239px;
+  left: 165px;
+}
+.touch__line {
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+  width: 1110px;
+}
+.touch__wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 48px;
+}
+.touch__wrapper__title {
+  font-family: "Ibarra Real Nova";
+  opacity: 1;
+  font-size: 40px;
+  font-weight: 700;
+  color: #33323D;
+  line-height: 42px;
+  width: 350px;
+  height: 42px;
+}
+.touch__wrapper__text {
+  font-family: "Public Sans";
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 400;
+  color: #33323D;
+  line-height: 30px;
+  width: 635px;
+  height: 210px;
+}
+
 .portfolio__footer {
   position: relative;
   width: 100%;
