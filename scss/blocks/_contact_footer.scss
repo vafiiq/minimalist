@@ -1,0 +1,148 @@
+.contact__footer {
+    position: relative;
+    width: 100%;
+
+    &__nav {
+        background-color: $primary-color-dark-gray-blue;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        justify-content: space-around;
+        align-items: center;
+        top: 1128px;
+        padding-right: 165px;
+        padding-left: 165px;
+
+
+
+        &__list {
+            display: flex;
+            width: 25%;
+            justify-content: space-between;
+
+
+            &__item {
+                text-transform: uppercase;
+                list-style-type: none;
+
+                &--link {
+                    font-family: $main-font-family-text;
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #fff;
+                    font-weight: 400;
+                    line-height: 14.1px;
+
+                    &:active {
+                        color: $primary-color-cyan;
+                    }
+                }
+            }
+        }
+
+        &__icons {
+            width: 9%;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media only screen and (max-width:"768px") {
+    .contact__footer {
+        position: relative;
+        width: 768px;
+
+        &__nav {
+            background-color: $primary-color-dark-gray-blue;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            justify-content: space-around;
+            align-items: center;
+            top: 1200px;
+            padding-right: 28px;
+            padding-left: 39px;
+
+
+
+            &__list {
+                display: flex;
+                width: 60%;
+                justify-content: space-around;
+
+
+                &__item {
+                    text-transform: uppercase;
+                    list-style-type: none;
+
+                    &--link {
+                        font-family: $main-font-family-text;
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: #fff;
+                        font-weight: 400;
+                        line-height: 14.1px;
+
+                        &:active {
+                            color: $primary-color-cyan;
+                        }
+                    }
+                }
+            }
+
+            &__icons {
+                margin-left: 250px;
+                width: 20%;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:"376px") {
+    .contact__footer {
+        position: relative;
+        width: 375px;
+
+        &__nav {
+            background-color: $primary-color-dark-gray-blue;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 354px;
+            position: absolute;
+            justify-content: space-around;
+            align-items: center;
+            top: 1287px;
+            padding-right: 28px;
+            padding-left: 39px;
+
+
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 60%;
+                
+
+
+                &__item {
+                    padding-bottom: 32px;
+                    text-transform: uppercase;
+                    list-style-type: none;
+                }
+            }
+
+            &__icons {
+                margin-left: 230px;
+                width: 100%;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,173 @@
+.input {
+    position: absolute;
+    top: 594px;
+    left: 165px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__line {
+        width: 1110px;
+        background-color: $primary-color-dark-gray-blue;
+        opacity: 0.15;
+        height: 1px;
+    }
+
+    &__title {
+        margin-top: 48px;
+        @include text ($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
+    }
+
+    &__place {
+        display: flex;
+        flex-direction: column;
+
+        &__order {
+            padding-left: 20px;
+            @include text ($main-font-family-text, 13px, 400, $primary-color-dark-gray-blue, 1, 30px, 635px, 30px);
+        }
+        &__message{
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        &__focus {
+            margin-top: 47px;
+            @include text($main-font-family-text, 13px, 700, $primary-color-dark-gray-blue, 1, 30px, 635px, 30px);
+        }
+        &__submit{
+            margin-top: 24px;
+            cursor: pointer;
+            text-transform: uppercase;
+            @include button (none, #fff, $main-font-family-text, 200px, 48px, $primary-color-dark, 0, none, 12px, 400);
+            &:hover{
+                background-color: $primary-color-cyan;
+            }
+            &:active{
+                background-color: $primary-color-dark;
+                opacity: 0.1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:"768px") {
+    .input {
+        position: absolute;
+        top: 582px;
+        left: 39px;
+    
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__line {
+            width: 689px;
+            background-color: $primary-color-dark-gray-blue;
+            opacity: 0.15;
+            height: 1px;
+        }
+    
+        &__title {
+            margin-top: 48px;
+            @include text ($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
+        }
+    
+        &__place {
+            display: flex;
+            flex-direction: column;
+    
+            &__order {
+                padding-left: 20px;
+                @include text ($main-font-family-text, 13px, 400, $primary-color-dark-gray-blue, 1, 30px, 689px, 30px);
+            }
+            &__message{
+                width: 689px;
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+    
+            &__focus {
+                margin-top: 47px;
+                @include text($main-font-family-text, 13px, 700, $primary-color-dark-gray-blue, 1, 30px, 635px, 30px);
+            }
+            &__submit{
+                margin-top: 24px;
+                cursor: pointer;
+                text-transform: uppercase;
+                @include button (none, #fff, $main-font-family-text, 200px, 48px, $primary-color-dark, 0, none, 12px, 400);
+                &:hover{
+                    background-color: $primary-color-cyan;
+                }
+                &:active{
+                    background-color: $primary-color-dark;
+                    opacity: 0.1;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:"376px"){
+    .input {
+        position: absolute;
+        top: 640px;
+        left: 32px;
+    
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__line {
+            width: 311px;
+            background-color: $primary-color-dark-gray-blue;
+            opacity: 0.15;
+            height: 1px;
+        }
+    
+        &__title {
+            margin-top: 48px;
+            @include text ($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 311px, 42px);
+        }
+    
+        &__place {
+            display: flex;
+            flex-direction: column;
+    
+            &__order {
+                padding-left: 20px;
+                @include text ($main-font-family-text, 13px, 400, $primary-color-dark-gray-blue, 1, 30px, 311px, 48px);
+            }
+            &__message{
+                width: 311px;
+                
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+    
+            &__focus {
+                margin-top: 47px;
+                @include text($main-font-family-text, 13px, 700, $primary-color-dark-gray-blue, 1, 30px, 635px, 30px);
+            }
+            &__submit{
+                margin-top: 24px;
+                cursor: pointer;
+                text-transform: uppercase;
+                @include button (none, #fff, $main-font-family-text, 200px, 48px, $primary-color-dark, 0, none, 12px, 400);
+                &:hover{
+                    background-color: $primary-color-cyan;
+                }
+                &:active{
+                    background-color: $primary-color-dark;
+                    opacity: 0.1;
+                }
+            }
+        }
+    }
+
+
+}

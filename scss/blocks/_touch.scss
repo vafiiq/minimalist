@@ -1,26 +1,117 @@
-.touch{
+.touch {
     width: 100%;
     position: absolute;
     top: 239px;
     left: 165px;
-    &__line{
-        
+
+    &__line {
+
         height: 1px;
         background-color: $primary-color-dark-gray-blue;
         opacity: 0.15;
         width: 1110px;
     }
-    &__wrapper{
+
+    &__wrapper {
         position: absolute;
         display: flex;
         width: 100%;
         top: 48px;
-        &__title{
+
+        &__title {
             @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
         }
-        &__text{
+
+        &__text {
             @include text($main-font-family-text, 16px, 400, $primary-color-dark-gray-blue, 0.8, 30px, 635px, 210px);
         }
 
+    }
+
+    &__icons {
+        position: absolute;
+        top: 284px;
+        left: 500px;
+    }
+}
+
+@media only screen and (max-width:"768px") {
+    .touch {
+        width: 768px;
+        position: absolute;
+        top: 223px;
+        left: 39px;
+    
+        &__line {
+            height: 1px;
+            background-color: $primary-color-dark-gray-blue;
+            opacity: 0.15;
+            width: 689px;
+        }
+    
+        &__wrapper {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            top: 32px;
+    
+            &__title {
+                @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 281px, 42px);
+            }
+    
+            &__text {
+                margin-top: 24px;
+                @include text($main-font-family-text, 15px, 400, $primary-color-dark-gray-blue, 0.8, 30px, 689px, 180px);
+            }
+    
+        }
+    
+        &__icons {
+            position: absolute;
+            top: 300px;
+            left: 0px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width:"376px") {
+    .touch {
+        width: 375px;
+        position: absolute;
+        top: 129px;
+        left: 32px;
+    
+        &__line {
+            height: 1px;
+            background-color: $primary-color-dark-gray-blue;
+            opacity: 0.15;
+            width: 311px;
+        }
+    
+        &__wrapper {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            top: 32px;
+    
+            &__title {
+                @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 311px, 42px);
+            }
+    
+            &__text {
+                margin-top: 24px;
+                @include text($main-font-family-text, 15px, 400, $primary-color-dark-gray-blue, 0.8, 30px, 311px, 360px);
+            }
+    
+        }
+    
+        &__icons {
+            position: absolute;
+            top: 470px;
+            left: 0px;
+        }
     }
 }
