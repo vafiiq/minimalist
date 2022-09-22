@@ -1,4 +1,4 @@
-.intro{
+.intro {
     color: $primary-color-dark-gray-blue;
     position: absolute;
     background-image: url(../../images/intro-bg.png);
@@ -8,19 +8,102 @@
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
-    &__wrapper{
+
+    &__wrapper {
         margin-top: 243px;
         width: 445px;
         height: 357px;
         background-color: $secondary-color-very-light-gray;
     }
-    &__title{
+
+    &__title {
         padding: 45px 55px 95px 0px;
         @include text($main-font-family-title, 50px, 700, $primary-color-dark-gray-blue, 1, 50px, 390px, 320px);
-        
+
     }
-    &__btn{        
-        @include button(none, #fff, $main-font-family-text, 200px, 48px, $primary-color-dark, 17px 25px, 0);
+
+    &__btn {
+        @include button(none, #fff, $main-font-family-text, 200px, 48px, $primary-color-dark, 17px 25px 17px 70px, 0, 12px, 400);
+        background-image: url(../../images/Group\ 6.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &:hover {
+            background-color: $primary-color-cyan;
+            background-image: url(../../images/Group\ 6_hover.svg);
+        }
+
+        &:active {
+            background-color: $primary-color-dark;
+            opacity: 0.1;
+        }
     }
-    
+}
+
+
+@media only screen and (max-width:"768px") {
+    .intro {
+        color: $primary-color-dark-gray-blue;
+        position: absolute;
+        background-image: url(../../images/intro-bg-tablet.png);
+        top: 110px;
+        left: 39px;
+        background-size: contain;
+        width: 688px;
+        height: 600px;
+        background-repeat: no-repeat;
+
+        &__wrapper {
+            margin-top: 327px;
+            width: 514px;
+            height: 275px;
+            background-color: $secondary-color-very-light-gray;
+        }
+
+        &__title {
+            padding: 45px 55px 95px 0px;
+            @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 390px, 320px);
+
+        }
+
+        &__btn {
+            position: absolute;
+            top: 552px;
+            
+        }
+    }
+}
+
+@media only screen and (max-width:"376px") {
+    .intro {
+        color: $primary-color-dark-gray-blue;
+        position: absolute;
+        background-image: url(../../images/intro-bg-mobile.png);
+        background-size: contain;
+        background-position: center;
+        top: 110px;
+        left: 32px;
+        width: 311px;
+        height: 271px;
+        background-repeat: no-repeat;
+
+        &__wrapper {
+            margin-top: 307px;
+            width: 311px;
+            height: 288px;
+            background-color: $secondary-color-very-light-gray;
+        }
+
+        &__title {
+            padding: 0px;
+            @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 311px, 168px);
+
+        }
+
+        &__btn {
+            position: absolute;
+            top: 552px;
+            
+        }
+    }
 }

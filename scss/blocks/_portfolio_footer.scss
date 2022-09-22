@@ -1,4 +1,4 @@
-.footer {
+.portfolio__footer {
     position: relative;
     width: 100%;
 
@@ -11,7 +11,7 @@
         position: absolute;
         justify-content: space-around;
         align-items: center;
-        top: 1880px;
+        top: 2814px;
         padding-right: 165px;
         padding-left: 165px;
 
@@ -50,7 +50,7 @@
 }
 
 @media only screen and (max-width:"768px") {
-    .footer {
+    .portfolio__footer {
         position: relative;
         width: 768px;
 
@@ -63,7 +63,7 @@
             position: absolute;
             justify-content: space-around;
             align-items: center;
-            top: 1880px;
+            top: 2378px;
             padding-right: 28px;
             padding-left: 39px;
 
@@ -104,7 +104,7 @@
 }
 
 @media only screen and (max-width:"376px") {
-    .footer {
+    .portfolio__footer {
         position: relative;
         width: 375px;
 
@@ -117,7 +117,7 @@
             position: absolute;
             justify-content: space-around;
             align-items: center;
-            top: 2147px;
+            top: 3246px;
             padding-right: 28px;
             padding-left: 39px;
 

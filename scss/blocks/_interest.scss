@@ -1,7 +1,7 @@
-.offer {
+.interest {
     width: 100%;
     position: absolute;
-    top: 1600px;
+    top: 2580px;
     left: 165px;
 
     &__wrapper {
@@ -44,10 +44,10 @@
 }
 
 @media only screen and (max-width:"768px"){
-    .offer {
+    .interest {
         width: 768px;
         position: absolute;
-        top: 1600px;
+        top: 2198px;
         left: 39px;
     
         &__wrapper {
@@ -71,10 +71,10 @@
 }
 
 @media only screen and (max-width:"376px"){
-    .offer {
+    .interest {
         width: 375px;
         position: absolute;
-        top: 1853px;
+        top: 3022px;
         left: 32px;
         text-align: center;
     

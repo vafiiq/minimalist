@@ -1,0 +1,179 @@
+.insure {
+    position: absolute;
+    top: 1350px;
+    width: 100%;
+    padding-left: 165px;
+    display: flex;
+
+    &__photo {
+        width: 540px;
+        height: 500px;
+    }
+
+    &__wrapper {
+        margin-left: 125px;
+        width: 350px;
+
+        &__line {
+            background-color: $primary-color-dark-gray-blue;
+            width: 350px;
+            opacity: 0.15;
+        }
+
+        &__title {
+            padding-top: 50px;
+            @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
+        }
+
+        &__text {
+            margin-top: 70px;
+            margin-bottom: 50px;
+            @include text($main-font-family-text, 16px, 400, $primary-color-dark-gray-blue, 0.8, 30px, 350px, 150px);
+        }
+
+        &__btn {
+            @include button (none, $primary-color-dark-gray-blue, $main-font-family-text, 134px, 14px, #fff, 17px 32px, 1px solid #000, 12px, 400);
+
+            &:hover {
+                background-color: $primary-color-dark-gray-blue;
+                color: $secondary-color-very-light-gray;
+            }
+
+            &:active {
+                background-color: #fff;
+                color: $primary-color-dark-gray-blue;
+                border: 2px solid $secondary-color-light-gray;
+            }
+        }
+
+        &_line {
+            margin-top: 158px;
+            background-color: $primary-color-dark-gray-blue;
+            width: 350px;
+            height: 1px;
+            opacity: 0.15;
+        }
+    }
+}
+
+@media only screen and (max-width:"768px") {
+    .insure {
+        position: absolute;
+        top: 1231px;
+        width: 100%;
+        padding-left: 39px;
+        display: flex;
+
+        &__photo {
+            margin-top: 33px;
+            width: 339px;
+            height: 314px;
+        }
+
+        &__wrapper {
+            margin-left: 34px;
+            width: 281px;
+
+            &__line {
+                background-color: $primary-color-dark-gray-blue;
+                width: 281px;
+                opacity: 0.15;
+            }
+
+            &__title {
+                padding-top: 33px;
+                @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
+            }
+
+            &__text {
+                margin-top: 39px;
+                margin-bottom: 50px;
+                @include text($main-font-family-text, 16px, 400, $primary-color-dark-gray-blue, 0.8, 30px, 350px, 180px);
+            }
+
+            &__btn {
+                @include button (none, $primary-color-dark-gray-blue, $main-font-family-text, 134px, 14px, #fff, 17px 32px, 1px solid #000, 12px, 400);
+
+                &:hover {
+                    background-color: $primary-color-dark-gray-blue;
+                    color: $secondary-color-very-light-gray;
+                }
+
+                &:active {
+                    background-color: #fff;
+                    color: $primary-color-dark-gray-blue;
+                    border: 2px solid $secondary-color-light-gray;
+                }
+            }
+
+            &_line {
+                margin-top: 50px;
+                background-color: $primary-color-dark-gray-blue;
+                width: 281px;
+                height: 1px;
+                opacity: 0.15;
+            }
+        }
+    }
+}
+@media only screen and (max-width:"376px") {
+        .insure {
+            position: absolute;
+            top: 1454px;
+            width: 100%;
+            padding-left: 32px;
+            display: flex;
+            flex-direction: column;
+
+            &__photo {
+                width: 311px;
+                height: 288px;
+            }
+
+            &__wrapper {
+                margin-left: 0px;
+                width: 350px;
+
+                &__line {
+                    background-color: $primary-color-dark-gray-blue;
+                    width: 311px;
+                    opacity: 0.15;
+                }
+
+                &__title {
+                    padding-top: 24px;
+                    @include text($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
+                }
+
+                &__text {
+                    margin-top: 34px;
+                    margin-bottom: 50px;
+                    @include text($main-font-family-text, 16px, 400, $primary-color-dark-gray-blue, 0.8, 30px, 350px, 150px);
+                }
+
+                &__btn {
+                    @include button (none, $primary-color-dark-gray-blue, $main-font-family-text, 134px, 14px, #fff, 17px 32px, 1px solid #000, 12px, 400);
+
+                    &:hover {
+                        background-color: $primary-color-dark-gray-blue;
+                        color: $secondary-color-very-light-gray;
+                    }
+
+                    &:active {
+                        background-color: #fff;
+                        color: $primary-color-dark-gray-blue;
+                        border: 2px solid $secondary-color-light-gray;
+                    }
+                }
+
+                &_line {
+                    margin-top: 24px;
+                    background-color: $primary-color-dark-gray-blue;
+                    width: 311px;
+                    height: 1px;
+                    opacity: 0.15;
+                }
+            }
+
+        }
+    }

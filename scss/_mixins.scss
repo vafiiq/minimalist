@@ -1,4 +1,4 @@
-@mixin button ($td, $c,  $ff, $w, $h, $bg-c, $p, $br) { 
+@mixin button ($td, $c,  $ff, $w, $h, $bg-c, $p, $br, $fs, $fw ) { 
     text-decoration: $td;
     color: $c;
     font-family: $ff;
@@ -7,6 +7,8 @@
     background-color: $bg-c;
     padding: $p;
     border: $br;
+    font-size: $fs;
+    font-weight: $fw;
     
     
 }
