@@ -25,9 +25,12 @@
 
         &__order {
             padding-left: 20px;
+            border: 2px solid green;
             @include text ($main-font-family-text, 13px, 400, $primary-color-dark-gray-blue, 1, 30px, 635px, 30px);
         }
-        &__message{
+
+        &__message {
+            border: 2px solid green;
             padding-left: 20px;
             padding-top: 10px;
         }
@@ -36,15 +39,18 @@
             margin-top: 47px;
             @include text($main-font-family-text, 13px, 700, $primary-color-dark-gray-blue, 1, 30px, 635px, 30px);
         }
-        &__submit{
+
+        &__submit {
             margin-top: 24px;
             cursor: pointer;
             text-transform: uppercase;
             @include button (none, #fff, $main-font-family-text, 200px, 48px, $primary-color-dark, 0, none, 12px, 400);
-            &:hover{
+
+            &:hover {
                 background-color: $primary-color-cyan;
             }
-            &:active{
+
+            &:active {
                 background-color: $primary-color-dark;
                 opacity: 0.1;
             }
@@ -57,51 +63,57 @@
         position: absolute;
         top: 582px;
         left: 39px;
-    
+
         &__wrapper {
             display: flex;
             flex-direction: column;
         }
-    
+
         &__line {
             width: 689px;
             background-color: $primary-color-dark-gray-blue;
             opacity: 0.15;
             height: 1px;
         }
-    
+
         &__title {
             margin-top: 48px;
             @include text ($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 350px, 42px);
         }
-    
+
         &__place {
             display: flex;
             flex-direction: column;
-    
+
             &__order {
+                border: 2px solid green;
                 padding-left: 20px;
                 @include text ($main-font-family-text, 13px, 400, $primary-color-dark-gray-blue, 1, 30px, 689px, 30px);
             }
-            &__message{
+
+            &__message {
+                border: 2px solid green;
                 width: 689px;
                 padding-left: 20px;
                 padding-top: 10px;
             }
-    
+
             &__focus {
                 margin-top: 47px;
                 @include text($main-font-family-text, 13px, 700, $primary-color-dark-gray-blue, 1, 30px, 635px, 30px);
             }
-            &__submit{
+
+            &__submit {
                 margin-top: 24px;
                 cursor: pointer;
                 text-transform: uppercase;
                 @include button (none, #fff, $main-font-family-text, 200px, 48px, $primary-color-dark, 0, none, 12px, 400);
-                &:hover{
+
+                &:hover {
                     background-color: $primary-color-cyan;
                 }
-                &:active{
+
+                &:active {
                     background-color: $primary-color-dark;
                     opacity: 0.1;
                 }
@@ -111,57 +123,62 @@
 
 }
 
-@media only screen and (max-width:"376px"){
+@media only screen and (max-width:"376px") {
     .input {
         position: absolute;
         top: 640px;
         left: 32px;
-    
+
         &__wrapper {
             display: flex;
             flex-direction: column;
         }
-    
+
         &__line {
             width: 311px;
             background-color: $primary-color-dark-gray-blue;
             opacity: 0.15;
             height: 1px;
         }
-    
+
         &__title {
             margin-top: 48px;
             @include text ($main-font-family-title, 40px, 700, $primary-color-dark-gray-blue, 1, 42px, 311px, 42px);
         }
-    
+
         &__place {
             display: flex;
             flex-direction: column;
-    
+
             &__order {
                 padding-left: 20px;
+                border: 2px solid green;
                 @include text ($main-font-family-text, 13px, 400, $primary-color-dark-gray-blue, 1, 30px, 311px, 48px);
             }
-            &__message{
+
+            &__message {
                 width: 311px;
-                
+                border: 2px solid green;
                 padding-left: 20px;
                 padding-top: 10px;
             }
-    
+
             &__focus {
                 margin-top: 47px;
                 @include text($main-font-family-text, 13px, 700, $primary-color-dark-gray-blue, 1, 30px, 635px, 30px);
             }
-            &__submit{
+
+            &__submit {
                 margin-top: 24px;
                 cursor: pointer;
                 text-transform: uppercase;
                 @include button (none, #fff, $main-font-family-text, 200px, 48px, $primary-color-dark, 0, none, 12px, 400);
-                &:hover{
+
+                &:hover {
                     background-color: $primary-color-cyan;
                 }
-                &:active{
+
+                &:active {
                     background-color: $primary-color-dark;
                     opacity: 0.1;
                 }

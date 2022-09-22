@@ -2044,6 +2044,7 @@ main {
 }
 .input__place__order {
   padding-left: 20px;
+  border: 2px solid green;
   font-family: "Public Sans";
   opacity: 1;
   font-size: 13px;
@@ -2054,6 +2055,7 @@ main {
   height: 30px;
 }
 .input__place__message {
+  border: 2px solid green;
   padding-left: 20px;
   padding-top: 10px;
 }
@@ -2123,6 +2125,7 @@ main {
     flex-direction: column;
   }
   .input__place__order {
+    border: 2px solid green;
     padding-left: 20px;
     font-family: "Public Sans";
     opacity: 1;
@@ -2134,6 +2137,7 @@ main {
     height: 30px;
   }
   .input__place__message {
+    border: 2px solid green;
     width: 689px;
     padding-left: 20px;
     padding-top: 10px;
@@ -2205,6 +2209,7 @@ main {
   }
   .input__place__order {
     padding-left: 20px;
+    border: 2px solid green;
     font-family: "Public Sans";
     opacity: 1;
     font-size: 13px;
@@ -2216,6 +2221,7 @@ main {
   }
   .input__place__message {
     width: 311px;
+    border: 2px solid green;
     padding-left: 20px;
     padding-top: 10px;
   }
